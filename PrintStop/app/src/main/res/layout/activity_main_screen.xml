@@ -27,6 +27,7 @@
                 android:src="@drawable/question_mark"
                 android:background="@null"
                 android:padding="10dp"
+                android:onClick="btnHelpClicked"
                 android:layout_marginStart="15dp"
                 android:layout_marginLeft="0dp" />
 
@@ -140,6 +141,7 @@
                         android:textColor="#FFF"
                         android:textSize="20sp"
                         android:textStyle="bold"
+                        android:onClick="btnAddMoreFilesClicked"
                         android:text="@string/add_files"/>
                 </LinearLayout>
 

@@ -9,4 +9,8 @@
     <string name="main_screen_files_title">Your Files</string>
     <string name="add_files">ADD FILES</string>
     <string name="log_out">Log Out</string>
+    <string name="back">Back</string>
+    <string name="help_text">Instructions for using this Machine</string>
+    <string name="put_flashdisk">Please, insert your Pendrive and click on "Scan".</string>
+    <string name="scan">SCAN</string>
 </resources>

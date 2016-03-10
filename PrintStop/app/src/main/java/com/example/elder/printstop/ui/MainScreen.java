@@ -1,10 +1,13 @@
 package com.example.elder.printstop.ui;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
+import com.example.elder.printstop.AddMoreFiles;
 import com.example.elder.printstop.R;
 import com.example.elder.printstop.SimpleDividerItemDecoration;
 import com.example.elder.printstop.adapter.RecyclerViewAdapterMainScreen;
@@ -36,6 +39,17 @@ public class MainScreen extends AppCompatActivity {
 
 //        Used to add a line between the cells
 //        mRecyclerView.addItemDecoration(new SimpleDividerItemDecoration(this));
+    }
+
+
+    public void btnHelpClicked(View view){
+        Intent intent = new Intent(this, Help.class);
+        startActivity(intent);
+    }
+
+    public void btnAddMoreFilesClicked (View view){
+        Intent intent = new Intent(this, AddMoreFiles.class);
+        startActivity(intent);
     }
 
     public ArrayList<FileToPrint> getFakeData() {
