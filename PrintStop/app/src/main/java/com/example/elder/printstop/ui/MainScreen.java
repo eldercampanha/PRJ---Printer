@@ -20,6 +20,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import com.example.elder.printstop.AddMoreFiles;
@@ -63,7 +64,7 @@ public class MainScreen extends AppCompatActivity {
         mRecyclerViewAdapterMainScreen = new RecyclerViewAdapterMainScreen(this,mFiles);
         mRecyclerView.setAdapter(mRecyclerViewAdapterMainScreen);
 
-        FloatingActionButton fab = (FloatingActionButton)findViewById(R.id.print_fab);
+        ImageButton fab = (ImageButton)findViewById(R.id.print_fab);
         fab.setBackgroundTintList(ColorStateList.valueOf(Color.WHITE));
 
 //        Used to add a line between the cells
@@ -110,6 +111,8 @@ public class MainScreen extends AppCompatActivity {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        } catch ( Exception ex){
+            ex.printStackTrace();
         }
 
     }
